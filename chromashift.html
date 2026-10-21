@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chroma Shift — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Chroma Shift by Tsereq Ya Vun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-top:#020617;
+    --bg-bottom:#0F172A;
+    --cyan:#06B6D4;
+    --cyan-bright:#22D3EE;
+    --purple:#A855F7;
+    --pink:#EC4899;
+    --amber:#F59E0B;
+    --text:#E2E8F0;
+    --muted:#94A3B8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(160deg,var(--bg-top) 0%,var(--bg-bottom) 100%);
+    background-attachment:fixed;
+    color:var(--text);
+    font-family:'Rajdhani',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:17px;
+    line-height:1.7;
+    min-height:100vh;
+  }
+  /* Faint neon grid, echoing the game's Neon biome background */
+  body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(168,85,247,.06) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(168,85,247,.06) 1px,transparent 1px);
+    background-size:60px 60px;
+    pointer-events:none;
+    z-index:0;
+  }
+  .wrap{position:relative;z-index:1;max-width:820px;margin:0 auto;padding:48px 22px 72px;}
+  header{text-align:center;margin-bottom:44px;}
+  .logo{
+    font-family:'Orbitron',sans-serif;
+    font-weight:900;
+    font-size:clamp(28px,7vw,44px);
+    letter-spacing:4px;
+    margin:0;
+    color:#fff;
+    text-shadow:0 0 18px rgba(59,130,246,.85),0 0 34px rgba(168,85,247,.55);
+  }
+  .tagline{
+    font-family:'Orbitron',sans-serif;
+    font-size:11px;
+    letter-spacing:3px;
+    color:var(--muted);
+    margin-top:10px;
+  }
+  .doc-title{
+    font-family:'Orbitron',sans-serif;
+    font-size:15px;
+    letter-spacing:2px;
+    color:var(--cyan-bright);
+    margin-top:26px;
+    text-transform:uppercase;
+  }
+  .updated{font-size:14px;color:var(--muted);margin-top:6px;}
+  .card{
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:18px;
+    padding:26px 26px 22px;
+    margin-bottom:20px;
+    backdrop-filter:blur(4px);
+  }
+  .card.accent-cyan{border-color:rgba(6,182,212,.45);box-shadow:0 0 22px rgba(6,182,212,.10);}
+  .card.accent-amber{border-color:rgba(245,158,11,.45);box-shadow:0 0 22px rgba(245,158,11,.10);}
+  h2{
+    font-family:'Orbitron',sans-serif;
+    font-size:16px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    margin:0 0 14px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2::before{
+    content:'';
+    width:9px;height:9px;border-radius:2px;
+    background:var(--cyan);
+    box-shadow:0 0 10px var(--cyan);
+    flex:none;
+  }
+  .card.accent-amber h2::before{background:var(--amber);box-shadow:0 0 10px var(--amber);}
+  h3{font-family:'Orbitron',sans-serif;font-size:13px;letter-spacing:1px;color:var(--cyan-bright);margin:20px 0 8px;}
+  p{margin:0 0 12px;}
+  ul{margin:0 0 12px;padding-left:20px;}
+  li{margin-bottom:7px;}
+  a{color:var(--cyan-bright);text-decoration:none;border-bottom:1px solid rgba(34,211,238,.4);}
+  a:hover{color:#fff;border-bottom-color:#fff;}
+  strong{color:#fff;font-weight:600;}
+  .pill{
+    display:inline-block;
+    font-family:'Orbitron',sans-serif;
+    font-size:11px;
+    letter-spacing:1px;
+    padding:4px 12px;
+    border-radius:999px;
+    border:1px solid rgba(34,211,238,.5);
+    color:var(--cyan-bright);
+    background:rgba(6,182,212,.10);
+    margin:2px 4px 2px 0;
+  }
+  .contact-mail{
+    font-family:'Orbitron',sans-serif;
+    font-size:clamp(14px,3.4vw,18px);
+    letter-spacing:1px;
+    word-break:break-all;
+  }
+  footer{
+    text-align:center;
+    margin-top:38px;
+    padding-top:24px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:var(--muted);
+    font-size:14px;
+  }
+  footer .studio{
+    font-family:'Orbitron',sans-serif;
+    letter-spacing:2px;
+    color:var(--text);
+    font-size:13px;
+  }
+  table{width:100%;border-collapse:collapse;margin:6px 0 14px;font-size:15px;}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.09);vertical-align:top;}
+  th{font-family:'Orbitron',sans-serif;font-size:11px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:400;}
+  @media(max-width:520px){
+    body{font-size:16px;}
+    .wrap{padding:34px 16px 56px;}
+    .card{padding:20px 18px 16px;border-radius:14px;}
+    table{font-size:14px;}
+    th,td{padding:7px 6px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1 class="logo">CHROMA SHIFT</h1>
+    <div class="tagline">RHYTHM . COLOR . SURVIVE</div>
+    <div class="doc-title">Privacy Policy</div>
+    <div class="updated">Last updated: 6 August 2026</div>
+  </header>
+
+  <div class="card accent-cyan">
+    <h2>Summary</h2>
+    <p>
+      <strong>Chroma Shift</strong> is developed by <strong>Tsereq Ya Vun</strong>. We do not ask you
+      to create an account, and we do not collect your name, email address, phone number, or location.
+      Your game progress is stored <strong>on your own device</strong>.
+    </p>
+    <p>
+      Three things do leave your device: anonymous usage and crash statistics that tell us how the
+      game is performing, and — only if you choose to set a nickname — your leaderboard entry. The
+      game also shows ads, and our advertising partner (Google AdMob) collects certain device and
+      usage data in order to deliver those ads. All of this is explained in detail below.
+    </p>
+    <div>
+      <span class="pill">No account needed</span>
+      <span class="pill">No name or email collected</span>
+      <span class="pill">Progress stored on device</span>
+      <span class="pill">Anonymous analytics</span>
+      <span class="pill">Optional leaderboard</span>
+      <span class="pill">Ads by Google AdMob</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>1. Information stored on your device</h2>
+    <p>
+      Chroma Shift saves the following locally on your device so the game works between sessions.
+      Unless you join the leaderboard (section 5), none of it is uploaded to us:
+    </p>
+    <ul>
+      <li>Level progress and highest level reached</li>
+      <li>Score, high score, and gameplay statistics (walls broken, play time)</li>
+      <li>In-game currency (Photons), owned items, unlocked cosmetics and themes</li>
+      <li>Daily quests, achievements, and daily login streak progress</li>
+      <li>Settings such as music volume, sound effects, haptics, and chosen language</li>
+      <li>A nickname and profile icon, if you choose to set one</li>
+      <li>A randomly generated identifier used to keep your progress consistent on this device</li>
+    </ul>
+    <p>
+      This information is removed when you uninstall the app or clear the app's data from your
+      device settings.
+    </p>
+    <p>
+      <strong>One exception:</strong> if you choose a nickname in order to appear on the global
+      leaderboard, your nickname, profile icon and scores are also uploaded and made public. That is
+      explained in section 5, and it only ever happens if you set a nickname.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2. Advertising</h2>
+    <p>
+      Chroma Shift displays advertising provided by <strong>Google AdMob</strong>. To serve and
+      measure ads, Google may collect and process data such as:
+    </p>
+    <ul>
+      <li>Your device's advertising identifier</li>
+      <li>Device information (model, operating system version, language, general region)</li>
+      <li>IP address, which may be used to infer approximate (non-precise) location</li>
+      <li>Ad interaction data, such as which ads were shown, viewed, or clicked</li>
+    </ul>
+    <p>
+      This processing is carried out by Google, not by us. To learn how Google uses this data, see
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">
+      How Google uses information from sites or apps that use our services</a> and the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+    </p>
+
+    <h3>Your choices</h3>
+    <ul>
+      <li>
+        If you are in the European Economic Area, the United Kingdom, or Switzerland, you are shown a
+        consent screen before personalised ads are used. You can change your choice at any time from
+        <strong>Settings → Ad Privacy Settings</strong> inside the game.
+      </li>
+      <li>
+        On Android you can reset or delete your advertising ID, or opt out of ad personalisation,
+        from your device's system settings (usually under <em>Settings → Privacy → Ads</em>).
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. What we collect ourselves</h2>
+    <table>
+      <tr><th>Data type</th><th>Collected by Tsereq Ya Vun?</th></tr>
+      <tr><td>Name, email address, phone number</td><td>No</td></tr>
+      <tr><td>Precise location</td><td>No</td></tr>
+      <tr><td>Contacts, photos, files, microphone, camera</td><td>No</td></tr>
+      <tr><td>Payment information</td><td>No</td></tr>
+      <tr><td>Game progress and settings</td><td>Stored on your device only</td></tr>
+      <tr><td>Anonymous gameplay and crash statistics</td><td>Yes &mdash; see section 4</td></tr>
+      <tr><td>Nickname, profile icon and score</td><td>Only if you join the leaderboard &mdash; see section 5</td></tr>
+    </table>
+    <p>
+      We do not sell or rent any data. We do not build advertising profiles about you ourselves.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>4. Analytics and crash reporting</h2>
+    <p>
+      Chroma Shift uses <strong>Google Firebase Analytics</strong> and
+      <strong>Firebase Crashlytics</strong> to understand how the game is played and to find bugs.
+      This is anonymous and statistical &mdash; it tells us things like &ldquo;how many players
+      finished level 4&rdquo;, never who you are. The data processed includes:
+    </p>
+    <ul>
+      <li>Gameplay events: levels started, completed or failed, stars earned, ads watched</li>
+      <li>Aggregate profile signals: highest level reached, an approximate skill bracket</li>
+      <li>Device model, operating system version, language and country</li>
+      <li>An app-instance identifier generated by Firebase, which resets if you reinstall the app or clear its data</li>
+      <li>Crash reports: the error, the level it happened on, and technical device state at the time</li>
+    </ul>
+    <p>
+      We do not receive your name, email address, phone number, contacts or precise location through
+      this. If you are in the European Economic Area or the United Kingdom, the consent choice you
+      make in the privacy prompt when you first open the game is applied to this data too.
+    </p>
+    <p>
+      Firebase is operated by Google. See
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase&rsquo;s privacy information</a>
+      and
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.
+    </p>
+  </div>
+
+  <div class="card accent-cyan">
+    <h2>5. Leaderboard (optional)</h2>
+    <p>
+      The global leaderboard is <strong>opt-in</strong>. Nothing about you is published unless you
+      choose a nickname. If you do, the following is uploaded to our Google Firestore database and
+      is <strong>publicly visible to other players</strong>:
+    </p>
+    <ul>
+      <li>The nickname you typed and the profile icon you picked</li>
+      <li>Your high score, weekly and monthly best scores, total walls broken and highest level</li>
+      <li>The random device identifier described in section 1, used as your row&rsquo;s key</li>
+      <li>
+        An anonymous Firebase sign-in identifier. The game signs in to Google Firebase
+        anonymously the first time you submit a score &mdash; this creates no account and asks for
+        no email or password. It exists only so that nobody else can overwrite or delete your
+        leaderboard entry.
+      </li>
+    </ul>
+    <p>
+      Please <strong>do not use your real name</strong> or any personal information as your nickname.
+      If you want your leaderboard entry removed, email us at the address in section 11 and we will
+      delete it.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>6. Permissions the app uses</h2>
+    <ul>
+      <li><strong>Internet access</strong> — required to load ads, send anonymous analytics and crash reports, and show the leaderboard.</li>
+      <li><strong>Vibration</strong> — used for haptic feedback during gameplay. Can be turned off in Settings.</li>
+      <li>
+        <strong>Notifications</strong> — used only to remind you about your daily reward or login
+        streak. You may deny or revoke this permission at any time; the game works normally without it.
+      </li>
+    </ul>
+  </div>
+
+  <div class="card accent-amber">
+    <h2>7. Children</h2>
+    <p>
+      Chroma Shift is not directed at children under 13, and we do not knowingly collect personal
+      information from children. If you believe a child has provided us with personal information,
+      please contact us at the address below and we will take appropriate action.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>8. Data retention and deletion</h2>
+    <p>
+      Your game data is stored on your device, so you can delete all of it at any time by
+      uninstalling Chroma Shift or by clearing the app's data from your device settings. Doing so also
+      resets the analytics app-instance identifier described in section 4.
+    </p>
+    <p>
+      A leaderboard entry, if you created one, stays in our database until you ask us to remove it.
+      Email the address in section 11 and we will delete it. Analytics data is retained by Google for
+      up to 14 months; crash reports are retained for up to 90 days. Data held by Google in connection
+      with advertising is governed by Google's own retention policies, linked in section 2.
+    </p>
+  </div>
+
+
+  <div class="card">
+    <h2>9. Where your data goes, and your rights</h2>
+    <h3>International transfers</h3>
+    <p>
+      Advertising, analytics and crash reporting are provided by Google and are processed on
+      Google&rsquo;s infrastructure, which may be located outside the European Economic Area,
+      including in the United States. The leaderboard database is hosted in the European Union.
+      Where data leaves the EEA, Google relies on the European Commission&rsquo;s Standard
+      Contractual Clauses; details are in
+      <a href="https://business.safety.google/privacy/" target="_blank" rel="noopener">Google&rsquo;s privacy resources</a>.
+    </p>
+
+    <h3>Why we are allowed to process it</h3>
+    <p>
+      If you are in the European Economic Area or the United Kingdom, we rely on your
+      <strong>consent</strong> for personalised advertising and for analytics &mdash; that is the
+      choice you make in the prompt when you first open the game, which you can change at any time
+      from Settings. We rely on our <strong>legitimate interest</strong> in keeping the game working
+      for crash reporting and for protecting the leaderboard from abuse. Your leaderboard entry is
+      published on the basis of your <strong>consent</strong>, given by choosing a nickname.
+    </p>
+
+    <h3>Your rights</h3>
+    <p>
+      You can ask us to give you a copy of the data we hold about you, to correct it, to delete it,
+      or to stop using it. In practice almost everything is already in your hands: uninstalling the
+      app or clearing its data removes your local save and resets your analytics identifier, and we
+      will delete your leaderboard entry on request. Email us at the address in section 11 and we
+      will respond within 30 days.
+    </p>
+    <p>
+      If you are in the EEA or the UK and you are not satisfied with how we have handled your data,
+      you have the right to complain to your national data protection authority.
+    </p>
+
+    <h3>Security</h3>
+    <p>
+      All data sent between the game and our providers travels over encrypted HTTPS connections.
+      Leaderboard entries can only be written by the device that created them.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>10. Changes to this policy</h2>
+    <p>
+      We may update this privacy policy from time to time — for example, if the game gains new
+      features. When we do, we will change the "Last updated" date at the top of this page. Material
+      changes may also be announced within the app.
+    </p>
+  </div>
+
+  <div class="card accent-cyan">
+    <h2>11. Contact</h2>
+    <p>Questions about this policy or about your data? Get in touch:</p>
+    <p class="contact-mail">
+      <a href="mailto:sarkar.leq@gmail.com">sarkar.leq@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    <div class="studio">Tsereq Ya Vun</div>
+    <div>Chroma Shift &middot; com.arssstudio.chromashift</div>
+  </footer>
+
+</div>
+</body>
+</html>
